@@ -1,0 +1,80 @@
+body {
+    background-color: lightgray;
+}
+
+nav {
+    border: 3px dotted blue;
+    width: fit-content;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+nav a {
+    color: blue;
+    font-size: 200%;
+    padding: 0px 20px;
+}
+
+nav a:hover{
+    color: red;
+    background-color: white;
+    /* font-size: 250%; */
+}
+
+#news {
+    background-color: yellowgreen;
+    width: fit-content;
+    padding: 0px 20px;
+    /* border-bottom: 2px dashed red; */
+    text-decoration: dashed underline red;
+}
+
+p {
+    margin-left: 100px;
+}
+
+.impar {
+    background-color: lightblue;
+    border: 2px solid black;
+    padding-left: 20px;
+}
+
+#contactForm {
+    background-color: yellow;
+    width: fit-content;
+    padding: 10px;
+    
+}
+
+fieldset {
+    padding-right: 200px;
+}
+
+input {
+    display: block;
+}
+
+input:focus{
+    background-color: red;
+}
+
+#name {
+    width: 100px;
+}
+
+#pass {
+    width: 150px;
+}
+
+input[type=email] {
+    width: 200px;
+}
+
+/* div p:first-child{
+    background-color: brown;
+} */
+
+div p:nth-child(3n+5){
+    background-color: white;
+}
+

@@ -1,0 +1,45 @@
+/* TAG SELECTORS */
+
+p {
+    color: blue;
+    /* font-size: 40px; */
+    /* font-size: 2rem; */
+    /* em, rem vh, vw ... */
+}
+
+h1 {
+    /* cifre hexazecimale: 0-9, A-F */
+    background-color: #ccc;
+    width: fit-content;
+}
+
+/* CLASS SELECTORS */
+
+.navigatie {
+    color: red;
+}
+
+/* ID SELECTORS */
+
+#prim {
+    color: green;
+}
+
+#special {
+    background-color: lightgrey;
+    width: 300px;
+    border: 2px solid green;
+    padding: 30px 100px;
+        /* sus dreapta jos stânga */
+    /* margin: 20px 50px 100px 200px; */
+    margin: auto;
+}
+
+#special p {
+    background-color: yellow;
+    margin: 0;
+}
+
+h1.navigatie {
+    margin: auto;
+}

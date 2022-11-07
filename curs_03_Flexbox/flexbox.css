@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+
+
+
+@media(min-width:700px) {
+    #container {
+        background-color: teal;;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* flex-wrap: wrap; */
+    }
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+}
+
+#p1 {
+    /* flex: 1; */
+    /* order: 2; */
+}
+#p2 {
+    /* flex: 1; */
+    /* order: 3; */
+}
+#p3 {
+    /* flex: 1; */
+    /* order: 4; */
+}
+#p4 {
+    /* flex: 1; */
+    /* order: 1; */
+}
+
+p{
+    display: flex;
+    flex-basis: 20%;
+}

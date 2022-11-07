@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    width: 600px;
+    height: 600px;
+    background-color: aquamarine;
+    border-top: 2px dashed blue;
+    border-bottom: 3px solid red;
+
+    position: relative;
+    margin: 40px 20px 10px 5px;
+    
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.child {
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+    border: 2px solid orange;
+
+    position: absolute;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 20px;
+}
+
+p {
+    font-size: 2em;
+}
+
+p.inner {
+    font-size: 2rem;
+}
+

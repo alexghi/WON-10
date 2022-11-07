@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <style>
+      p a {
+        color: brown;
+        font-size: 20px;
+      }
+
+      div > p {
+        color: rgb(197, 140, 210);
+      }
+
+      div + p {
+        color:blue;
+      }
+      
+      /* echilvalent cu 2n+1 */
+      div p:nth-child(odd) {
+        color: blue;
+      }
+
+      /* echilvalent cu 2n */
+      div p:nth-child(even) { 
+        color: pink;
+      }
+
+      a:hover {
+        color: orange;
+      }
+      /* a:visited {
+        color: red;
+      } */
+      a:active {
+        color: rgb(9, 113, 124);
+      }
+
+      ul li:first-child {
+        color:rgb(9, 113, 124);
+      }
+
+      #myLastDiv {
+        color: pink;
+      }
+
+      #myLastDiv::after {
+        content: 'UI CE TARE'
+      }
+
+      #myLastDiv::before {
+        content: 'inainte'
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="colors.html">Colors</a>
+      <a href="units.html"> Units</a>
+      <a href="example.html">Example</a>
+    </nav>
+   <div>
+    <div>
+      &#9818;
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam
+      quidem animi laboriosam aspernatur pariatur error, culpa ratione
+      reiciendis accusamus quos ut amet consequatur dolore delectus dicta
+      blanditiis minima iste.
+      <a href="mancare.html"> Mancare </a>
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      cupiditate quis! Temporibus, odit ipsam molestiae repellendus harum
+      repellat distinctio sapiente perferendis cumque architecto!
+      <a href="exercitii.html"> Exercitii </a>
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      cupiditate quis! Temporibus, odit ipsam molestiae repellendus harum
+      repellat distinctio sapiente perferendis cumque architecto!
+
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      cupiditate quis! Temporibus, odit ipsam molestiae repellendus harum
+      repellat distinctio sapiente perferendis cumque architecto!
+
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      cupiditate quis! Temporibus, odit ipsam molestiae repellendus harum
+      repellat distinctio sapiente perferendis cumque architecto!
+    </p>
+
+    <ul>
+      <li>
+        something
+        <a href="google.com"> Go to google </a>
+      </li>
+      <li>
+        else
+        <a href="imdb.com"> Go to imdb </a>
+      </li>
+      <li>
+        inca ceva
+      </li>
+    </ul>
+
+    <div>
+      <p>Paragraph in exterior dar in interiorul unui div, copil direct</p>
+      <div>
+        <span>
+          <p>paragraf in interior</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      un p care este adiacent unui div
+    </p>
+    <p>
+      un p care este adiacent unui Paragraph
+    </p>
+
+    <div id="myLastDiv">
+      un div cu pseudo style
+    </div>
+   </div>
+  </body>
+</html>
