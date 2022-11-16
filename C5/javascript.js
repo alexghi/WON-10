@@ -12,12 +12,12 @@ var stefan = {
     firstName:"Stefan",
     lastName:"Salavastru",
     age:25,
-    phoneNumber:0742581672,
+    phoneNumber:"0743581672",
     gender:"masculin",
     email:"st.salavastru@gmail.com",
     hobby,
 };
 function thisIsMe (stefan) {
-    console.log (`Numele meu este ${stefan.firstName} ${stefan.lastName}, am ${stefan.age} de ani, numarul meu de telefon este ${stefan.phonenumber}, adresa mea de mail este ${stefan.email}, iar printre hobby-urile mele se numara ${hobby[0]},${hobby[1]},${hobby[2]}`)
+    console.log (`Numele meu este ${stefan.firstName} ${stefan.lastName}, genul meu este ${stefan.gender}, am ${stefan.age} de ani, numarul meu de telefon este ${stefan.phoneNumber}, adresa mea de mail este ${stefan.email}, iar printre hobby-urile mele se numara ${hobby[0]},${hobby[1]},${hobby[2]}`)
 }
 thisIsMe(stefan);
