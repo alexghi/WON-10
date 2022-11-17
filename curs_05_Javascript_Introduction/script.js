@@ -15,10 +15,6 @@ var sayHello = function (a) {
   return "hello";
 };
 
-function sayMyDetails(yourName, yourAge) {
+var sayMyDetails= function(yourName, yourAge) {
   return `numele tau este ${yourName}, iar varsta ta este ${yourAge}`;
 }
-
-var sayAge = (someAge) => {
-  return someAge;
-};
