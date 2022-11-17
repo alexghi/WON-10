@@ -1,0 +1,64 @@
+body {
+    background-color:lightgrey;
+    
+}
+header {
+    display:inline-block;
+    margin-left:35%;
+}
+ul {
+    list-style-type:none;
+    outline:2px dotted blue;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+
+    
+}
+li a {
+    display:block;
+    text-align:center;
+    font-size:24px;
+    text-decoration:underline;
+    padding:15px;
+}
+li {
+    float:left;
+}
+h1 {
+    text-decoration:underline dotted red;
+    background-color: yellowgreen;
+    display:inline-block ;
+    padding-right:15px;
+    padding-left:15px;
+
+}
+p:nth-child(odd) {
+    background:lightblue;
+}
+form {
+    position:fixed;
+    background:yellow;
+    padding:10px;
+}
+fieldset {
+    position:relative;
+    display:inline-block;
+    width:450px;
+    
+    
+    
+}
+input {
+    margin:0.4em;
+    
+}
+#fname {
+    width:200px;
+}
+#password {
+    width:250px;
+}
+#email {
+    width:300px;
+}
