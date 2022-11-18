@@ -1,5 +1,5 @@
 var hobbies = ["Fitness","Music","Reading"];
-const personal = {
+var personal = {
     firstName : "Raphael",
     lastName : "Bunea",
     age : 23,
@@ -11,9 +11,9 @@ const personal = {
 
 console.log("One of my hobbies is " + hobbies[2]);
 
-function personalData(name1,name2,age,hobby1,hobby2,hobby3)
-{
-    console.log("My name is " + name1 +" "+ name2 +", I am " + age +" and my hobbies are " + hobby1 +", "+ hobby2 +", " + "and " + hobby3)
+function personalData () {
+    console.log(`My name is ${personal.firstName} ${personal.lastName} , I am ${personal.age} my hobbies include ${hobbies}`);
 }
 
-personalData(personal['firstName'],personal['lastName'],personal['age'],hobbies[0] , hobbies[1] , hobbies[2])
+personalData () ;
+
