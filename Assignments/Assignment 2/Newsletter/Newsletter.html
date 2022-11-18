@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+
+    <style>
+      body {
+        background-color: #d3d3d3;
+      }
+      h1 {
+        background-color: #adff2e;
+        text-decoration: underline dotted red;
+        width: 11rem;
+        text-align: center;
+      }
+      .pageText {
+        text-align: left;
+        margin: 0 2rem 0 2rem;
+      }
+      .pageText p:nth-child(odd) {
+        background-color: #add8e6;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      nav {
+        font-size: 1.5rem;
+        text-align: center;
+        word-spacing: 2rem;
+        border: dotted blue;
+        width: 31.25rem;
+        margin: auto;
+      }
+      .formBox {
+            background-color: yellow;
+            width: 33.25rem;
+            height: 13.25rem;
+            padding: 1rem;
+        }
+
+      form {
+            text-align: justify;
+            border: 1px solid black;
+            padding: 0.6rem;
+            border-top: none;           
+        }
+
+      .cdline {
+            display: flex;
+            align-items: center;
+        }
+      .cdline::after {
+            content: "";
+            flex: 1;
+            margin-left: 0.3rem;
+            height: 1px;
+            background-color: black;
+        }
+      .cdline::before {
+            content: "";
+            flex: 0.1;
+            margin-right: 0.3rem;
+            height: 1px;
+            background-color: black;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/Home">Home</a>
+      <a href="/Articles">Articles</a>
+      <a href="/Newsletter">Newsletter</a>
+      <a href="/About">About</a>
+    </nav>
+
+    <h1>Newsletter</h1>
+    <div class="pageText">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis
+        odit velit nisi error blanditiis explicabo numquam minus quis obcaecati
+        nostrum optio exercitationem saepe dolores, impedit fuga quae tempora
+        eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Laboriosam temporibus ad eos accusamus dicta doloribus error, harum
+        debitis corrupti, neque porro mollitia reiciendis praesentium magni
+        velit sint nobis nisi placeat!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        dicta nostrum consectetur dolorem, commodi quidem. Accusamus tempore
+        veritatis mollitia fuga tenetur illum unde illo assumenda ab pariatur.
+        Atque, aliquid. Molestiae! Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Soluta nemo, consequatur vero earum delectus eum sint
+        deleniti sapiente ea blanditiis dolor modi ullam commodi reprehenderit
+        quia officiis exercitationem adipisci similique!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis
+        nihil voluptate dolores porro quidem obcaecati, nam, excepturi sed,
+        laudantium enim? Aspernatur sequi nesciunt quaerat ut maiores
+        repudiandae pariatur odio. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quae itaque dignissimos eius totam nesciunt, aut
+        perferendis dolorum obcaecati rerum! Perferendis dolores ut neque fugiat
+        sequi mollitia odit explicabo, harum amet.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, quos
+        explicabo ullam eos architecto iusto a pariatur perspiciatis aspernatur
+        dolore dolores exercitationem quisquam eligendi, consequuntur aut
+        voluptates asperiores laudantium suscipit! Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Consectetur, quidem! Error repellendus vel
+        veniam officiis reiciendis accusamus sapiente consequatur, eaque optio
+        quo perspiciatis ex sed ad pariatur eos consequuntur totam.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        architecto quas, est inventore vel possimus. Error autem quam nobis.
+        Dignissimos, quas alias quo unde dicta doloremque aperiam! Est, dicta
+        explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ratione neque doloribus impedit enim et alias quam dicta voluptatibus
+        velit qui facere architecto, reprehenderit ullam, corporis non. Harum
+        ipsum dignissimos veritatis.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, deleniti pariatur dolorum minus temporibus incidunt!
+        Incidunt possimus numquam corporis repudiandae, veritatis optio debitis
+        exercitationem molestiae blanditiis ullam soluta ratione neque! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed
+        temporibus accusamus, facere labore expedita alias officiis ducimus
+        velit cupiditate reiciendis obcaecati veniam! Neque cumque veritatis eum
+        est atque dignissimos.
+      </p>
+    </div>
+    <div class="formBox">
+      <p class="cdline">Contact Details</p>
+        <form>
+           <label>Name:</label>
+           <br>
+           <input type="text" size="20">
+           <br> 
+           <label>Password:</label>
+           <br>
+           <input type="password" size="30">
+           <br> 
+           <label>e-mail:</label>
+           <br>
+           <input type="email" size="40"> 
+           <br>
+           <input type="Submit">
+        </form>
+    </div>
+  </body>
+</html>
