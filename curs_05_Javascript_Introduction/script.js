@@ -1,6 +1,6 @@
-function hobby(NumeHobby){
-    var NumeHobby=["gaming","video editing","filming","drawing"];
-     return `Hobby-urile mele sunt ${NumeHobby}.`;
+var NumeHobby=["gaming","video editing","filming","drawing"];
+function hobby(lista){
+     return `Hobby-urile mele sunt ${lista}.`;
  };
 
  var myDetails={
@@ -9,10 +9,10 @@ function hobby(NumeHobby){
      varsta:20,
      telefon: "0745332208",
      gen: "feminin",
+     hobbies: NumeHobby,
  };
 
- function detalii(myName,myAge,NumeHobby){
-     var NumeHobby=["gaming","video editing","filming","drawing"];
+ function detalii(){
      var myAge= 20;
      var myName="Liz";
     return `Numele meu este ${myName}, am ${myAge} ani si printre hobby-urile mele se afla:${NumeHobby}.`;
