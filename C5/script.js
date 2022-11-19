@@ -4,7 +4,7 @@ for (let numeHobby of myHobby ){
     console.log(`Unul din hobby-urile mele este ${numeHobby}`)
 }
 
-var infoPers={
+var _infoPers={
     firstName:"Gherman",
     lastName:"Emanuel",
     age: 32,
@@ -12,6 +12,8 @@ var infoPers={
     hobby: ["alergat", "sport", "hiking"]
 }
 
-function myInfo(_infoPers) {
+function myInfo(infoPers) {
     return `Numele meu este ${infoPers.firstName} ${infoPers.lastName}, am ${infoPers.age} ani si printre hobby-urile mele se afla: ${infoPers.hobby}`;
 }
+
+console.log(myInfo(_infoPers))
