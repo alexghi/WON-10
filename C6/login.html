@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curs 06 - JS part 2 Homework</title>
+    <script async defer src="index.js"></script>
+    <!-- <script defer async src="exercitii.js"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1> Login form</h1>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+    <div id="id01" class="modal">
+        <form class="model-content" >
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <label for="uname"><b>Name</b></label>
+                <input type="text" placeholder="Enter name" name="uname" id="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <label for="age"><b>Age</b></label>
+                <input type="number" placeholder="Enter age" name="age" id="age" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter email" name="email" id="email" required>
+
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="containerCancel" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

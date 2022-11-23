@@ -25,9 +25,9 @@ for (const nr of arrayOfNumebers) {
   }
 }
 
-// 1. Numar vocale
+// 2. Numar vocale
 
-const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+/*const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 const string = prompt('Enter a string: ');
 const result = countVowel(string);
@@ -42,9 +42,29 @@ function countVowel(str) {
       }
   }
   return count;
+}*/
+
+// 3.. Formular
+
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
+function verificare() {
+  const name = document.getElementById("uname"); 
+  const password = document.getElementById("psw"); 
+  const age = document.getElementById("age"); 
+  const email = document.getElementById("email"); 
 
+
+}
 
 
 // // OBIECTE
@@ -67,7 +87,7 @@ function countVowel(str) {
 
 // // DOM
 
-const titlu = document.getElementById("prim"); // returnează un SINGUR obiect
+/*const titlu = document.getElementById("prim"); // returnează un SINGUR obiect
 titlu.innerHTML = "DOM";
 
 const paragrafe = document.getElementsByTagName("p"); // returnează un ARRAY
@@ -78,7 +98,7 @@ for (const par of paragrafe) {
 const clase = document.getElementsByClassName("impar"); // returnează un ARRAY
 for (const par of clase) {
   par.innerHTML = "Paragraf impar ... ";
-}
+}*/
 
 // // querySelector
 
