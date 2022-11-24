@@ -6,11 +6,10 @@ function prim(nr) {
 
   let nrDiv = 0;
 
-  for(d=2;d<=nr/2;d++)
-    {
-    if(nr%d==0) 
+  for (d = 2; d <= nr / 2; d++) {
+    if (nr % d == 0)
       nrDiv++;
-    }
+  }
 
   if (nrDiv == 0 && nr >= 2)
     return true;
@@ -27,11 +26,12 @@ for (const nr of arrayOfNumebers) {
 
 // 2. Numar vocale
 
-/*const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 const string = prompt('Enter a string: ');
 const result = countVowel(string);
 console.log('Numarul de vocale: ' + result );
+alert('Numarul de vocale din cuvantul inserat este: ' + result );
 
 function countVowel(str) {
   let count = 0;
@@ -42,7 +42,7 @@ function countVowel(str) {
       }
   }
   return count;
-}*/
+}
 
 // 3.. Formular
 
@@ -51,66 +51,61 @@ function countVowel(str) {
 var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 function verificare() {
-  const name = document.getElementById("uname"); 
-  const password = document.getElementById("psw"); 
-  const age = document.getElementById("age"); 
-  const email = document.getElementById("email"); 
+  const name = document.getElementById("uname").value;
+  const password = document.getElementById("psw").value;
+  const age = document.getElementById("age").value;
+  const email = document.getElementById("email").value;
 
-
-}
-
-
-// // OBIECTE
-
-// // let obj = {
-// //     prop1 : 'valoare',
-// //     prop2 : 2,
-// //     prop3 : true
-// // }
-
-// let person = {
-//   name: "John",
-//   age: 30,
-//   adress: "Cluj-Napoca",
-// };
-
-// person["age"] = 10;
-// person.name = "Maria";
-// console.log(person);
-
-// // DOM
-
-/*const titlu = document.getElementById("prim"); // returnează un SINGUR obiect
-titlu.innerHTML = "DOM";
-
-const paragrafe = document.getElementsByTagName("p"); // returnează un ARRAY
-for (const par of paragrafe) {
-  par.innerHTML = "Altceva ... ";
-}
-
-const clase = document.getElementsByClassName("impar"); // returnează un ARRAY
-for (const par of clase) {
-  par.innerHTML = "Paragraf impar ... ";
-}*/
-
-// // querySelector
-
-// // const impar = document.querySelector('.impar'); // returnează PRIMUL obiect de acest fel
-// // impar.innerHTML = 'Paragraf impar ... querySELECTOR ';
-
-function modifica() {
-  const impar = document.querySelectorAll(".impar"); // returnează TOATE obiectele de acest fel
-  for (const par of impar) {
-    par.innerHTML = "Paragraf impar ... querySelectorAll";
-    // par.style.color = 'red';
-    par.classList.toggle("rosu");
-    // par.classList.remove("rosu");
+  if (nrCaracters(name) == false) {
+    alert('Username must be at least 3 characters long');
+    uname.focus();
   }
+
+  if (containsNumber(password) == false) {
+    alert('The password must contain at least a number');
+    uname.focus();
+  }
+
+  if (checkAge(age) == false) {
+    alert('You must be at least 16 years old to submit');
+    uname.focus();
+  }
+
+  if (checkEmail(email) == false) {
+    alert('The e-mail must be on a .ro domain');
+    uname.focus();
+  }
+}
+
+function nrCaracters(uname) {
+
+  if (uname.length >= 3)
+    return true;
+  else
+    return false;
+}
+
+function containsNumber(str) {
+  return /[0-9]/.test(str);
+}
+
+function checkAge(age) {
+  if (age >= 16)
+    return true;
+  else
+    return false;
+}
+
+function checkEmail(email) {
+  if (email.includes(".ro"))
+    return true;
+  else
+    return false;
 }
