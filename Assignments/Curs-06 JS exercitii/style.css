@@ -1,0 +1,44 @@
+body {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    background: linear-gradient(lightgreen,lightblue);
+}
+h1 {
+    align-self:center;
+    margin:0;
+    padding:20px;
+}
+button {
+    
+    width:7rem;
+    justify-self:flex-start;
+}
+body > div {
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius:5px;
+    width:500px;
+    background:whitesmoke;
+    flex-wrap:wrap;
+}
+
+.form {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:30px 40px;
+
+}
+
+#error {
+    margin-bottom:1rem;
+    border: 1px solid black;
+    background:white;
+    padding:1rem;
+    border-radius:5px;
+}
