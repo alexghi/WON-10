@@ -1,0 +1,98 @@
+/* Fonts */
+@font-face {
+  font-family: cartograph-cf;
+  src: url("/Assets/fonts/CartographCF-Regular.woff");
+}
+
+/* Globals */
+
+* {
+  text-decoration: none;
+  font-family: "cartograph-cf";
+  line-height: 1.7em;
+}
+
+html {
+  margin-bottom: 2.6rem;
+}
+
+body {
+  background-color: rgba(223, 219, 221, 0.41);
+  margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #141414;
+  font-family: sans-serif;
+  line-height: normal;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Contact Me */
+
+.heading {
+  width: 800px;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.contact {
+  width: 800px;
+  height: 460px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.contact-sides {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-labels {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-top: 16px;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+input {
+  border-width: 0 0 1px;
+  border-bottom-color: #e8e8e8;
+  background-color: transparent;
+  margin-top: 16px;
+}
+
+textarea {
+  width: 600px;
+  height: 40px;
+  border-width: 0 0 1px;
+  border-color: #000 #000 #e8e8e8;
+  padding: 20px 0;
+}
+
+.sent-message {
+  border-width: 0;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+form {
+  margin-top: -30px;
+}

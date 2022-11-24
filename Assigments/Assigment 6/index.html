@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Assigment 6</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1>Submit for new content!</h1>
+    </div>
+
+    <div class="contact">
+      <form name="myform" method="post" action="/" onsubmit="return validateform()" >  
+        <div class="contact-sides">
+          <div class="contact-labels">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="What is your name?"></div>
+          <div class="contact-labels">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="What's your email?"></div>
+        </div>
+        <div class="contact-sides">
+          <div class="contact-labels">
+            <label  for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password"></div>
+          <div class="contact-labels">
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="What is your age?"></div>
+        </div>
+
+        <div class="contact-labels">
+          <label class="message" for="Message">Leave us a message</label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Hi there! I'd like to talk with you sometime about..."></textarea>
+        </div>
+        <button class="sent-message" type="submit">Send message &#8599</button>
+      </form>
+    </div>
+  </body>
+</html>
