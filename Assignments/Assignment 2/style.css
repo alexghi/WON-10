@@ -1,0 +1,54 @@
+#you {
+  background-color: rgba(12, 166, 222, 0.265);
+}
+p {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+#top-menu-bar {
+  border: 2px dotted rgb(9, 63, 210);
+  text-align: center;
+  color: rgb(9, 63, 210);
+  width: 400px;
+  margin-left: 450px;
+  align-self: center;
+}
+
+#top-menu-bar li {
+  font-size: 20;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  color: rgb(9, 63, 210);
+  padding: 0 15px 0 15px;
+}
+#top-menu-bar a:visited {
+  color: rgb(9, 63, 210);
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background: #fff;
+}
+
+body {
+  background-color: rgb(205, 210, 214);
+}
+h1 {
+  width: 200;
+  background-color: rgb(127, 254, 24);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: dashed;
+}
+div {
+  margin: 10px;
+  padding: 20px;
+  width: 450px;
+  background-color: yellow;
+  border: 3px solid black;
+}
