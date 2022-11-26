@@ -28,18 +28,6 @@ let checkVowels = (str) => {
 console.log(checkVowels("AICISEsta"));
 
 // 3
-
-// labelForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   const value = labelForm.querySelector("input[type=text]").value;
-//   console.log(value);
-// });
-
-// function validate() {
-//   if ()
-// }
-
 function validateform() {
   const name = document.myForm.name.value;
   const password = document.myForm.password.value;
