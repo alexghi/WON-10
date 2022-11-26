@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/html' media='screen'>
+    <script async defer>
+
+    function numere(n){
+    
+      var a = 1
+       while (a <= n)
+     
+       {
+      document.writeln(a);
+      a++
+      }
+
+    }
+   
+   
+      function verificare(div);
+     {
+      var x=3;
+       x=document.formular.date.value;
+      y=isNaN(x);
+      if (y==true);
+       alert("Introduceti un numar!");
+       else
+       if (x<3)
+     
+    { 
+      alert("Va rog sa introduceti un numar pozitiv!");
+      }
+    } 
+    function limitarelungime(obj, length){
+	var lungime=length
+   if (obj.value.length>lungime)
+   	obj.value=obj.value.substring(0, lungime)
+}
+
+
+
+  
+  
+    function everif(str) {
+   	var at=".ro"
+       var punct="."
+       var lat=str.indexOf(at)
+       var   lstr=str.length
+       var lpunct=str.indexOf(punct)
+       if (str.indexOf(at)==-1){
+          	alert("E-mail invalid. Introduceti o   adresa reala!!!")
+          	return false
+       }}
+        
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+       	alert("E-mail invalid. Introduceti o adresa reala!!!")
+           return false
+		} 
+  
+  		if (str.indexOf(punct)==-1 ||   str.indexOf(punct)==0 || str.indexOf(punct)==lstr){
+          alert("E-mail invalid. Introduceti o adresa reala!!!")
+          return   false
+       }
+ 
+ 		if (str.indexOf(at,(lat+1))!=-1){
+          alert("E-mail invalid. Introduceti o adresa reala!!!")
+          return   false}
+   
+       </script>
+   
+   </head>
+
+      <body>
+           <div>
+     <legend>contact details</legend>
+     <label for="Name"> Name</label>
+     <br>
+     <input type ></input> 
+    
+     
+     <br>
+     <label for="password"> password</label>
+     <br>
+     <input type></input>
+   <br>
+   <br>
+     <label for="age"> Age</label>
+     <br>
+     <input type></input>
+     <br>
+     <br>
+     <label for="E-mail"> E-mail</label>
+     <br>
+     <input type></input>
+     <br>
+   
+    </div>
+   
+    
+    </body>
+    </html>
