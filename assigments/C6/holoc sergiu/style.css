@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  border: none; 
+  flex-grow: 2;
+  gap: 3rem;
+  background-color: #0505;
+
+}
+
+.formstyle{
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: greenyellow;
+  font-weight: bolder;
+  width:450px;
+  
+}
+
+input{
+  border: none; 
+  border-bottom: solid;
+  border-color: gray;
+  width: 250px;
+  height: 25px;
+}
