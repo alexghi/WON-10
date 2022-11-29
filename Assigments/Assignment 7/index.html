@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script async defer src="index.js"></script>
+  </head>
+  <body>
+    <form>
+      1st Number : <input type="text" id="firstNumber" /><br />
+      2nd Number: <input type="text" id="secondNumber" /><br />
+      <input type="button" onClick="cmmdc()" value="c.m.m.d.c." />
+      <input type="button" onClick="cmmmd()" value="c.m.m.m.c." />
+      <p id="result"></p>
+    </form>
+    <div class="trafficLight">
+      <div id="redLight" class="light redLight"></div>
+      <div id="yellowLight" class="light yellowLight"></div>
+      <div id="greenLight" class="light greenLight"></div>
+    </div>
+    <div>
+      <input type="button" id="btn" onClick="dayLight()" value="Day Light" />
+      <input
+        type="button"
+        id="btn2"
+        onclick="nightLight()"
+        value="Night Light"
+      />
+    </div>
+  </body>
+</html>

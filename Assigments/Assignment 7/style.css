@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 180px;
+  background-color: antiquewhite;
+}
+
+input {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.trafficLight {
+  width: 180px;
+  height: 370px;
+  background-color: #cccccc;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.light {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+.redLight {
+  background-color: red;
+}
+
+.yellowLight {
+  background-color: yellow;
+}
+
+.greenLight {
+  background-color: green;
+}
