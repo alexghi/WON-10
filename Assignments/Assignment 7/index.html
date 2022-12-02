@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <script async defer src="myScript.js"></script>
+
+    <!-- FONT STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="pageSupport">
+        <div id="section1">
+            <div class="center">Introdu doua numere naturale</div>
+            <div id="inputs_buttonsStyle">
+                <div id="firstNum">
+                    <input class="input" id="firstNumInput">
+                </div>
+                <div class="buttons">
+                    <div id="cmMdc">
+                        <input type="button" class="button" name="cmMdcButton" value="c.m.m.d.c" onclick="cmMdcTester()">
+                    </div>
+                    <div id="cmmmc">
+                        <input type="button" class="button" name="cmmmcButton" value="c.m.m.m.c" onclick="cmmmcTester()">
+                    </div>
+                </div>
+                <div id="secondNum">
+                    <input class="input" id="secondNumInput">
+                </div>
+            </div>
+            <div class="result" id="cmMdcResult"></div>
+            <div class="result" id="cmmmcResult"></div>
+        </div>
+        <div id="section2">
+            <div id="trafficLight">
+                <div id="trafficLight_colors">
+                    <div id="redON"></div>
+                    <div id="yellowON"></div>
+                    <div id="greenON"></div>
+                </div>
+                <div id="timer"></div>
+            </div>
+            <div class="buttons">
+                <div>
+                    <input type="button" value="Zi" class="button" name="dayButton" onclick="trafficLight_Day()">
+                </div>
+                <div>
+                    <input type="button" value="Noapte" class="button" name="nightButton" onclick="trafficLight_Night()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

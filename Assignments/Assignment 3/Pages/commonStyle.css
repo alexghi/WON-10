@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+    font-family: Helvetica, Arial, 'Times New Roman';
+    font-size: 12px;
+    color: #808080;
+    margin-bottom: 3.5rem;
+    line-height: 1.4;
+}
+.boldText {
+    font-weight: bold;
+    color: black;
+}
+
+.topBar {
+    height: 3.125rem;
+    background-color: #e9edee;
+}
+.bottomBar {
+    height: 3.125rem;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeButtonContainer {
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}

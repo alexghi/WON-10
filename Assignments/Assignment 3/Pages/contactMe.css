@@ -1,0 +1,42 @@
+
+.contactPageLayout {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 40.75rem;
+}
+.contactForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+}
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(219, 219, 219);
+    background-color: #fbfbfb;
+    line-height: 3.5rem;
+  }
+  .followMeLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .socialLink {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    width: 17.1%;
+  }

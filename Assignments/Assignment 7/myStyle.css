@@ -1,0 +1,184 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #FEFCF3;
+    background-color: #404258;
+    
+}
+
+
+
+#pageSupport {
+    background-color: #474E68;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* SECTION 1 CSS */
+
+#section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 30%;
+        border-bottom: 1px solid rgb(53, 53, 53);
+        width: 100%;
+}
+
+#inputs_buttonsStyle {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+/* BUTTON STYLE SOURCE: https://getcssscan.com/css-buttons-examples */
+.button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 5.625rem
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.input {
+    background-color: #6B728E;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 3.30rem;
+    width: 3.30rem;
+    text-align: center;
+    color: #FEFCF3;
+    font-size: 1.25rem;
+    
+}
+
+.result {
+    margin-top: 1rem;
+}
+
+/* SECTION 2 CSS */
+
+#section2 {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#trafficLight {
+    background-color: rgb(14, 14, 14);
+    width: 5rem;
+    max-height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#trafficLight_colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+#redON {
+    background-color: red;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    
+}
+
+#yellowON {
+    background-color: yellow;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    
+}
+
+#greenON {
+    background-color: green;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    
+}
+
+#timer {
+    background-color: rgb(56, 56, 56);
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+
+
+
+

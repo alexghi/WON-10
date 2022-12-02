@@ -1,0 +1,81 @@
+.pageLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40.75rem;
+    margin: auto;
+    
+
+}
+.firstContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.25rem;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 2rem;
+}
+#profilePicture {
+    border-radius: 50%;
+    width: 9.375rem;
+    height: 9.375rem;
+    filter: grayscale(1);
+}
+.secondContainer{
+    display: flex;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+.aboutMeContainer {
+    width: 60%;
+}
+
+.pastExperienceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.thirdContainer {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    
+}
+
+.alignLeft {
+    float: left;
+}
+.alignRight {
+    float: right;
+}
+.portfolioCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px 0px 0px 20px;
+    margin-top: 20px;
+}
+.portfolioIcon {
+    width: 30px;
+    height: 30px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.projectPage {
+    width: 80%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    background-color:#e8e8e8;
+    filter: grayscale(1);
+    border-top-left-radius: 10px;
+}
+
