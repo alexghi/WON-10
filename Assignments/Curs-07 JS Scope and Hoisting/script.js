@@ -23,3 +23,72 @@ function calc(e) {
         document.getElementById("display").innerHTML=display;
     }
 
+// Traffic Lights
+
+const red = document.querySelector("#red");
+const yellow = document.querySelector("#yellow");
+const green = document.querySelector("#green");
+
+function changeLights(){
+    setTimeout(() => {
+        redLight()
+    },0);
+    setTimeout(() => {
+        yellowLight()
+    },3000);
+    setTimeout(() => {
+        greenLight()
+    },6000);
+    setTimeout(() => {
+        yellowLight()
+    },9000);
+    setTimeout(() => {
+        redLight()
+    },12000);
+}
+function redLight() {
+    red.classList.add("active")
+    setTimeout(() => {
+        red.classList.remove('active')
+    },3000);
+}
+function yellowLight() {
+    yellow.classList.add('active')
+    setTimeout(() => {
+        yellow.classList.remove('active')
+    },3000);
+}
+function greenLight() {
+    green.classList.add('active')
+    setTimeout(() => {
+        green.classList.remove('active')
+    },3000);
+}
+function yellowLight() {
+    yellow.classList.add('active')
+    setTimeout(() => {
+        yellow.classList.remove('active')
+    },3000);
+}
+function redLight() {
+    red.classList.add("active")
+    setTimeout(() => {
+        red.classList.remove('active')
+    },3000);
+    setInterval(changeLights,12000);
+    
+}
+
+function interYellow() {
+    setTimeout(() => {
+        yellowLight()
+    },0);
+    function yellowLight() {
+        yellow.classList.add('active')
+        setTimeout(() => {
+            yellow.classList.remove('active')
+        },200);
+    }
+    setInterval(interYellow,1000);
+    
+}

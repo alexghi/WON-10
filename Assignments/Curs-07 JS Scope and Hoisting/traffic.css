@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(aquamarine,lightgreen);
+}
+button {
+    margin:1rem;
+    width:100px;
+}
+.container {
+    margin-top:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width:200px;
+    background-color: lightgray;
+    border:2px solid black;
+    border-radius: 10px;
+}
+.color {
+    border:2px solid black;
+    border-radius:50%;
+    width:120px;
+    height:120px;
+}
+.red {
+    background-color: rgb(74, 5, 5);
+}
+.yellow {
+    background-color: rgb(65, 65, 3);
+}
+.green {
+    background-color: rgb(2, 61, 2);
+}
+.red.active {
+    background-color: red;
+    box-shadow: 12px;
+}
+.yellow.active{
+    background-color: yellow;
+    box-shadow: 12px;
+}
+.green.active {
+    background-color: green;
+    box-shadow: 12px;
+}
