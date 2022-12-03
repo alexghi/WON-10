@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 7 - Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script async defer src="07.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 50px" id="header">
+      Javascript - Tema 7
+    </h1>
+    <p style="margin: 50px; font-size: 30px">I. C.m.m.d.c & C.m.m.m.c</p>
+    <p style="margin: 50px 50px 20px 50px; font-size: 20px">
+      Introduceti valorile:
+    </p>
+    <div id="numbers">
+      <form style="margin-left: 50px">
+        <input
+          type="text"
+          name="value1"
+          id="value1"
+          style="width: 40px; margin: 10px; border-radius: 20%"
+        />
+        <input
+          type="text"
+          name="value2"
+          id="value2"
+          style="width: 40px; margin: 10px; border-radius: 20%"
+        />
+      </form>
+      <button onclick = "document.getElementById('cmmdc').innerHTML=`Cel mai mic divizor comun al numerelor este: ${cmmdc()}`"> C.M.M.D.C </button>
+      <br>
+      <button onclick = "document.getElementById('cmmmc').innerHTML=`Cel mai mic multiplu comun al numerelor este:${cmmmc()}`">C.M.M.M.C</button>
+  </div>
+    <p id ="cmmdc"></p>
+    <p id ="cmmmc"></p>
+    <p style="margin: 50px; font-size: 30px">II. Semafor</p>
+    <div id="container">
+      <div id="semafor">
+        <div id="green"></div>
+        <div id="yellow"></div>
+        <div id="red"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content: space-evenly">
+        <button
+          onclick="daylight=setTimeout(makeGreen, 1000);setTimeout(stopGreen,7000);setTimeout(makeYellow,7000);setTimeout(stopYellow,13000);setTimeout(makeRed,13000);setTimeout(stopRed,19000);setTimeout(makeYellow,19000);setTimeout(stopYellow,22000);setTimeout(makeGreen, 22000);setTimeout(stopGreen,25000)"
+          style="width: 200px; height: 50px; margin: 40px 0px 40px 200px"
+        >
+          Daylight
+        </button>
+        <button onclick="clearTimeout(daylight);setTimeout(makeYellow,1000);setTimeout(stopYellow,4000)" style="width: 200px; height: 50px; margin: 40px 0px 40px 200px">
+        Night Time
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

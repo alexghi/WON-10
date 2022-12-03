@@ -1,0 +1,56 @@
+#numbers {
+    display:flex;
+}
+#submit1:hover {
+    background-color:aqua;
+}
+#submit2:hover {
+    background-color:aqua;
+}
+#container {
+    display:flex;
+    flex-direction:row;
+}
+#semafor {
+    width:180px;
+    height:400px;
+    border:10px solid gray;
+    display:flex;
+    margin-left:500px;
+    text-align:center;
+    border-radius:2rem;
+    background-color:black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#green {
+    border:5px solid gray;
+    width:90px;
+    height:90px;
+    background-color: green;
+    border-radius:100%;
+    opacity:0.5;
+}
+#yellow {
+    border:5px solid gray;
+    width:90px;
+    height:90px;
+    background-color: yellow;
+    border-radius:100%;
+    opacity:0.5;
+}
+#red {
+    border:5px solid gray;
+    width:90px;
+    height:80px;
+    background-color: red;
+    border-radius:100%;
+    opacity:0.5;
+}
+#cmmdc {
+    margin-left:50px;
+}
+#cmmmc {
+    margin-left:50px;
+}
