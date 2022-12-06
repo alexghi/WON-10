@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, hsl(200,100%,50%), hsl(175,100%,50%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    width:300px;
+    height:300px;
+    background: rgba(255,255,255,.8); 
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+
+}
+.clock .number {
+    --rotation:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+    text-align:center;
+    transform:rotate(var(--rotation));
+    font-size: 1.5rem;
+    
+    /* the rotation variable is established to make it easier to transform every single element in order */
+}
+.clock .number1 { --rotation: 30deg;}
+.clock .number2 { --rotation: 60deg;}
+.clock .number3 { --rotation: 90deg;}
+.clock .number4 { --rotation: 120deg;}
+.clock .number5 { --rotation: 150deg;}
+.clock .number6 { --rotation: 180deg;}
+.clock .number7 { --rotation: 210deg;}
+.clock .number8 { --rotation: 240deg;}
+.clock .number9 { --rotation: 270deg;}
+.clock .number10 { --rotation: 300deg;}
+.clock .number11 { --rotation: 330deg;}
+.clock .number12 { --rotation: 360deg;}
+ 
+
+.clock .hand {
+    --rotation:0;
+    position: absolute;
+    width:10px;
+    height:50%;
+    bottom:50%;
+    left:50%;
+    border:1px solid white;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    z-index:10;
+    /* z index makes the hand suprapose the numbers */
+    background-color: black;
+    transform:translatex(-50%) rotate(calc(var(--rotation)*1deg));
+    transform-origin: bottom;
+    /* bottom, left and height center the element to the middle of the container , translateX offsets the element by half of his own dimension ,positioning it perfectly aligned with the center of both elements. Rotation has to be calculated into degrees because it will change through functions in JS and cannot be manually set through css.Transform origin changes the point from which the rotation begins so it can angle right with the clock numbers*/
+}
+
+.clock .hand.hour{
+    height:30%;
+    width:10px;
+    
+}
+.clock .hand.minute{
+    height:40%;
+    width:7px;
+    
+}
+.clock .hand.second{
+    height: 45%;
+    width:3px;
+    background-color: red;
+    
+}
+.clock::after {
+    content:'';
+    position:absolute;
+    background-color: black;
+    z-index:11;
+    width: 15px;
+    height: 15px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    /* this adds a pseudo-element to act as the holder for the hands. Content is empty string so that there is no writing its just an empty element . Translate specifies both x and y in this order */
+
+}
+span {
+    transform:rotate(180deg);
+    position:absolute; 
+}
