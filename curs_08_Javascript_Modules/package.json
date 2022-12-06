@@ -1,0 +1,24 @@
+{
+  "name": "curs8",
+  "version": "2.0.0",
+  "description": "knowledge regarding javascript modules and packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "tutorial",
+    "javascript",
+    "modules",
+    "packages"
+  ],
+  "author": "Alex Ghiurau",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vite": "^3.2.5"
+  }
+}
