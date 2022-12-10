@@ -1,7 +1,12 @@
 {
   "name": "curs8",
+<<<<<<< HEAD
   "version": "1.0.0",
   "description": "ce face pachetul - Contains elemntary knowledge about packages and modules in Javascript",
+=======
+  "version": "2.0.0",
+  "description": "knowledge regarding javascript modules and packages",
+>>>>>>> master
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,6 +14,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+<<<<<<< HEAD
 
   "keywords": [
     "modules",
@@ -19,6 +25,18 @@
   "author": "Borze Andrei",
   "license": "MIT",
   "dependencies": {
+=======
+  "keywords": [
+    "tutorial",
+    "javascript",
+    "modules",
+    "packages"
+  ],
+  "author": "Alex Ghiurau",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+>>>>>>> master
     "vite": "^3.2.5"
   }
 }
