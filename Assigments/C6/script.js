@@ -36,5 +36,64 @@ function vowel_count(str1)
 }
 console.log(vowel_count("Scrieți o funcție JavaScript care sa determine și să returneze numarul de vocale dintr-un sir de caractere dat"));
 
+function verificaNume() {
+  let nume = document.querySelector("#nume");
+  if (nume.value.lenght < 3) {
+    alert("Numele trebuie sa aiba cel putin 3 caractere");
+    nume.classList.add("error");
+    nume.focus();
+    return false;
+  } else {
+    nume.classList.remove("error");
+    return true;
+  }
+}
 
+function verificaParola() {
+  let pass = document.querySelector("#pass");
+  if (!pass.value.match(/\d/)) {
+    alert ("Parola trebuie sa contina cel putin o cifra");
+    pass.classList.add("#error");
+    pass.focus();
+    return false;
+  } else {
+    pass.classList.remove("error");
+    return true;
+  }
+}
 
+function verificaVarsta() {
+  let varsta = document.querySelector("#varsta");
+  if (varsta.value < 16) {
+    alert("Varsta trebuie sa fie minim 16!");
+    varsta.classList.add("error");
+    varsta.focus();
+    return false;
+  } else {
+    varsta.classList.remove("error");
+    return true;
+  }
+}
+
+function verificaEmail() {
+  let email = document.querySelector("#email");
+  if (!email.value.endWith(".ro")) {
+  alert("Doar domeniu email.ro");
+  email.classList.add("error");
+  email.focus();
+  return false;
+} else {
+  email.classList.remove("error");
+}
+}
+
+function validare() {
+  if (
+    verificaNume()  
+    && verificaParola() 
+    && verificaVarsta() 
+    && verificaEmail() 
+  )
+    return true;
+  else return false;
+}

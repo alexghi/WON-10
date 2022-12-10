@@ -4,28 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C6</title>
-    <script src="./script.js" async defer></script>
+    <script defer async src="script.js"></script>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <form>
-        <label>Name</label>
-        <br>
-        <input id="name_" type="text" placeholder=">3 crt"/>
-        <br>
-        <label>Enter your password</label>
-        <br>
-        <input id="pass_" type="password" placeholder="must contain min one number">
-        <br>
-        <label>Age</label>
-        <br>
-        <input id="age_" type="text" placeholder="min age 16"/>
-        <br>
-        <label>e-mail</label>
-        <br>
-        <input id="mail_" type="text" placeholder="domain .ro">
-        <br>
-        <button id="submitButton" onclick="formValidation()">Submit</button>
+    <form onsubmit="return validare()">
+        <fieldset>
+            <legend>Sign-up form:</legend>
+            <label for="nume">Name:</label>
+            <input id="nume" type="text" name="nume" placeholder=">3 crt"/>
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" name="pass" placeholder="must contain min one number">
+            <label for="varsta">Age:</label>
+            <input id="varsta" type="number" name="varsta" placeholder="min age 16"/>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="domain .ro">
+            <input type="submit" value="Sign me up!">
+        </fieldset>
     </form>    
 </body>
 </html>

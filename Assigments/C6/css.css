@@ -1,0 +1,8 @@
+input {
+    display: block;
+}
+
+fieldset {
+    width: fit-content;
+}
+
