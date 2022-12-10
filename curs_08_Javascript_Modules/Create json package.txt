@@ -1,0 +1,70 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules> node -v
+v18.12.1
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules> npm -v
+8.19.2
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules> mkdir project
+
+
+    Directory: C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         12/5/2022   7:05 PM                project
+
+
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules> cd project
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules\project> cd..
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (curs_08_javascript_modules) curs8
+version: (1.0.0)
+description: ce face pachetul - Contains elemntary knowledge about packages and modules in Javascript
+entry point: (index.js)
+test command:
+git repository:
+keywords: modules, javascripts, packages, tutorial
+author: Borze Andrei
+license: (ISC) MIT
+About to write to C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules\package.json:
+
+{
+  "name": "curs8",
+  "version": "1.0.0",
+  "description": "ce face pachetul - Contains elemntary knowledge about packages and modules in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modules",
+    "javascripts",
+    "packages",
+    "tutorial"
+  ],
+  "author": "Borze Andrei",
+  "license": "MIT"
+}
+
+
+Is this OK? (yes) yes
+npm notice
+npm notice New major version of npm available! 8.19.2 -> 9.1.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.1.3
+npm notice Run npm install -g npm@9.1.3 to update!
+npm notice
+PS C:\Users\borze\Documents\Web Development\Projects\WON-10\curs_08_Javascript_Modules>

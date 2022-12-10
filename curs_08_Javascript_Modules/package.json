@@ -1,0 +1,24 @@
+{
+  "name": "curs8",
+  "version": "1.0.0",
+  "description": "ce face pachetul - Contains elemntary knowledge about packages and modules in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+
+  "keywords": [
+    "modules",
+    "javascripts",
+    "packages",
+    "tutorial"
+  ],
+  "author": "Borze Andrei",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^3.2.5"
+  }
+}
