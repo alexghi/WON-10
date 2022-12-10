@@ -1,0 +1,161 @@
+body {
+  font-family: helvetica, sans-serif, arial;
+  background-color: #444444;
+}
+
+.pageStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  margin: 2rem;
+  width: 18.75rem;
+  height: 18.75rem;
+  border: 20px solid #171717;
+  border-radius: 50%;
+  position: relative;
+  background-color: #F5F5F5;
+  filter: drop-shadow(10px 10px 15px black)
+}
+
+.hours {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hour3 {
+  position: absolute;
+  left:89%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #444444;
+}
+
+.hour6 {
+  position: absolute;
+  top: 89%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #444444;
+}
+
+.hour9 {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #444444;
+}
+
+.hour12 {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #444444;
+
+}
+
+.minuteMarks {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: #444444;
+  left: 50%;
+  transform-origin: 50% 150px;
+  margin-left: -1px;
+ 
+}
+
+.minuteMarks:nth-of-type(5n-2) {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background-color: #171717;
+  left: 50%;
+  transform-origin: 50% 150px;
+  margin-left: -1px;
+}
+
+.hourHand {
+  position: absolute;
+  width: 0.25rem;
+  height: 3.75rem;
+  background-color: #171717;
+  left: 50%;
+  top: 29%;
+  transform-origin: 99% 99%;
+  margin-left: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  filter: drop-shadow(2px 2px 2px black)
+
+}
+.minuteHand {
+  position: absolute;
+  width: 0.1875rem;
+  height: 5rem;
+  background-color: #171717;
+  left: 50%;
+  top: 24%;
+  transform-origin: 99% 99%;
+  margin-left: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  filter: drop-shadow(2px 2px 2px black)
+
+}
+.secondHand {
+  position: absolute;
+  width: 0.0625rem;
+  height: 6.25rem;
+  background-color: #DA0037;
+  left: 50%;
+  top: 16%;
+  transform-origin: 99% 99%;
+  margin-left: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  filter: drop-shadow(2px 2px 1px black)
+}
+
+.midPoint {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  background-color: #171717;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 1px black)
+}
+
+.timerSettings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.numberInput {
+    background-color: #444444;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 3.30rem;
+    width: 3.30rem;
+    text-align: center;
+    color: #FEFCF3;
+    font-size: 1.25rem;
+}
+
