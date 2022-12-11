@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>C7</title>
+    <script async defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="1st" id="r1" required> <br> <br>
+        <input type="number" placeholder="2st" id="r2" required> <br> <br>
+    
+        <button class="btn" type="button" onclick="getInputValue1()">c.m.m.d.c.</button>
+        <button class="btn" type="button" onclick="getInputValue2();">c.m.m.m.c.</button>
+        
+    </div>
+        
+    <div>
+        <p id="result1"></p>
+        <p id="result2"></p>
+    </div>
+
+    <div class="container">
+        <div class="circle" color="red" id="red"></div>
+        <div class="circle" color="yellow" id="yellow"></div>
+        <div class="circle" color="green" id="green"></div>
+    </div>
+
+    <div>
+        <button class="btn" type="button" onclick="startTrafficSignal()">Day</button>
+        <button class="btn" type="button" onclick="startTrafficSignalYellow()">Night</button>
+    </div>
+
+</body>
+</html>
