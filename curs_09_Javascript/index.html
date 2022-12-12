@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Blog</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stil.css" />
+    <script async defer src="index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/WDLogo.png" alt="missing logo!" width="100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">About</a>
+          </div>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary ms-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="loginButton"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text hidden">
+                  Doar email .ro
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+                <div id="passHelp" class="form-text hidden">
+                  Trebuie minim o cifră
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Send me a newsletter</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h1 class="display-2 text-primary">Welcome to my amazing site!</h1>
+    </div>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/banner1.png"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/banner2.png"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/banner3.png"
+            class="d-block w-100"
+            alt="missing banner!"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <main class="col-10 border-end">
+          <h1>Main content</h1>
+          <p id="dataOra">Data și ora</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <span class="hidden">Quas id doloremque voluptate ratione eum quod nisi excepturi provident, eos
+              hic expedita eligendi temporibus debitis voluptas optio? Minus at
+              magni alias pariatur odio iusto velit assumenda vero aliquam? Nisi
+              doloribus placeat quam tempora molestiae eaque sit reprehenderit
+              libero iusto. Voluptates, deleniti!</span>
+              <span class="toggle">Read more ...</span>
+          </p>
+          <p>
+            sdvsfvksjrf nwkjren fkjwern fkjern.
+            <span class="hidden">s debitis voluptas optio? Minus at
+              magni alias pariatur odio iusto velit assumenda vero aliquam? Nisi
+              doloribus placeat quam tempora molestiae eaque sit reprehenderit
+              libero iusto. Voluptates, deleniti!</span>
+              <span class="toggle">Read more ...</span>
+          </p>
+          <!-- cardurile -->
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/poza3.jpg"
+                class="card-img-top"
+                alt="missing picture ..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card p-2" style="width: 18rem">
+              <img
+                src="img/poza5.jpg"
+                class="card-img-top"
+                alt="missing picture ..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card p-2" style="width: 18rem">
+              <img
+                src="img/poza6.jpg"
+                class="card-img-top"
+                alt="missing picture ..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <aside class="col-2 ps-5">
+          <h2>Aside info</h2>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="mt-3">
+      <div
+        class="container-fluid bg-dark text-white d-flex justify-content-around pt-3"
+      >
+        <p class="col-3">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+          magnam delectus dolore eaque modi? Optio adipisci molestias aperiam
+          repudiandae vitae. Veniam veritatis repudiandae quidem aut cum saepe
+          esse possimus non?
+        </p>
+        <p class="col-3">
+          Magni consectetur quos nihil accusamus beatae vel corrupti cupiditate
+          veniam quidem, molestias veritatis error est voluptatum, enim cumque
+          assumenda iure tenetur quibusdam. Atque sint est dicta at
+          necessitatibus consequatur nemo!
+        </p>
+        <p class="col-3">
+          Consectetur dolorum saepe incidunt ut adipisci illo maxime omnis
+          blanditiis sint quia tempore laboriosam, voluptatum magni doloremque
+          nulla quasi necessitatibus mollitia numquam ipsum! Aliquid sunt quasi
+          at quo necessitatibus doloribus!
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
