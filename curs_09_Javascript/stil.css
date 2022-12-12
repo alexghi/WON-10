@@ -1,0 +1,25 @@
+/* .btn {
+    border-radius: 30px;
+} */
+
+#loginButton {
+    border-radius: 30px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#emailHelp, #passHelp{
+    color: red;
+}
+
+.toggle {
+    color: blue;
+    background-color: yellow;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
