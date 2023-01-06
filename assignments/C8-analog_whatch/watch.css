@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.clock {
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid black;
+
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#time {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #dbce84;
+}
+
+.h12 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.h9 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-0%, -50%);
+}
+
+.h6 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -25px);
+}
+
+.h3 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  color: #9b8e2b;
+  font-size: 22px;
+  font-weight: 700;
+  z-index: 4;
+  background-color: black;
+}
+
+.diallines {
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 15px;
+  background: #a7a071;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  margin-top: 10px;
+  transform-origin: 100% 300px;
+}
+.diallines:nth-of-type(5n) {
+  background-color: #282828;
+  z-index: 0;
+}
+
+.diallinesDecor1 {
+  position: absolute;
+  z-index: 1;
+  width: 2px;
+  height: 15px;
+  background: #666;
+  top: 15%;
+  left: 40%;
+  transform: translate(-50%, -0%);
+  translate: -50%;
+  margin-top: 10px;
+  transform-origin: 50% 100px;
+}
+.diallinesDecor2 {
+  position: absolute;
+  z-index: 1;
+  width: 2px;
+  height: 15px;
+  background: #666;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  translate: -50%;
+  margin-top: 10px;
+  transform-origin: 50% 150px;
+}
+
+.center {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 4px -1px black;
+}
+
+/*  */
+.inner-clock-face {
+  position: absolute;
+  background: #282828;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 12px solid #282828;
+}
+
+.inner-clock-face::after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.inner-clock-face::after,
+.inner-clock-face::before,
+.inner-clock-face .marking {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #9b8e2b;
+  z-index: 1;
+  left: 50%;
+  translate: -50%;
+}
+
+.inner-clock-face .marking {
+  /* background: #5b5975; */
+  background: rgba(209, 209, 209, 0.726);
+  width: 4px;
+}
+
+.inner-clock-face .marking.marking-one {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.inner-clock-face .marking.marking-two {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.inner-clock-face .marking.marking-three {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.inner-clock-face .marking.marking-four {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+/*  */
+.hand {
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  background: #5c5211;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#hour-hand {
+  width: 30%;
+  z-index: 2;
+}
+
+#min-hand {
+  height: 3px;
+  z-index: 10;
+  width: 40%;
+  background: #d4c667;
+}
+
+#second-hand {
+  background: #dabf12;
+  width: 45%;
+  height: 2px;
+  z-index: 10;
+}
+/*  */
+.z-circle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #282828;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.cronometer {
+  align-self: center;
+  text-align: center;
+  position: relative;
+  bottom: 10%;
+  left: 0;
+}
+
+#timer {
+  color: grey;
+  background-color: #282828;
+  border-radius: 20px;
+  cursor: pointer;
+}
