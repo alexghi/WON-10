@@ -1,0 +1,11 @@
+input {
+    display: block;
+}
+
+fieldset {
+    width: fit-content;
+}
+
+.error {
+    background-color: red;
+}
